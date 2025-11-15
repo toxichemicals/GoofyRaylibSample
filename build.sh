@@ -63,7 +63,7 @@ function build_target {
     local LINK_FLAGS=$5       # Optional flags like -static
 
     local OUTPUT_DIR="builds/${TARGET_NAME}Latest"
-    local OUTPUT_FILE="${OUTPUT_DIR}/Swod${TARGET_NAME}"
+    local OUTPUT_FILE="${OUTPUT_DIR}/Cool${TARGET_NAME}"
     local TARGET_DIR_ROOT="${TARGET_NAME}Latest"
 
     echo "--- Building $TARGET_NAME ---"
@@ -167,7 +167,7 @@ else
 
         # --- Build the WASM HTML (WebAssembly) ---
         echo "Building the WASM HTML"
-        emcc main.c -o builds/WebLatest/SwodWebWASM.html \
+        emcc main.c -o builds/WebLatest/CoolWebWASM.html \
             -s USE_GLFW=3 \
             -s ASYNCIFY \
             -s SINGLE_FILE=1 \
@@ -181,7 +181,7 @@ else
 
         # --- Build the JS HTML (Pure JavaScript) ---
         echo "Building the JS HTML"
-        emcc main.c -o builds/WebLatest/SwodWebJS.html \
+        emcc main.c -o builds/WebLatest/CoolWebJS.html \
             -s USE_GLFW=3 \
             -s ASYNCIFY \
             -s SINGLE_FILE=1 \
