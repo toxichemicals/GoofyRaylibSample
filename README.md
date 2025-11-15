@@ -34,7 +34,7 @@ If you are **not** on Arch Linux, you must manually install the following depend
 
 | Platform | Required Tools | Purpose | 
 | ----- | ----- | ----- | 
-| **Linux (Native)** | `gcc`, `make` | Standard C compilation | 
+| **Linux (Native)** | `gcc` | Standard C compilation | 
 | **Windows (Cross)** | **MinGW-w64** compiler suite | Enables `i686-w64-mingw32-gcc` and `x86_64-w64-mingw32-gcc` | 
 | **Web (WASM/JS)** | **Emscripten SDK (emsdk)** | Provides the `emcc` toolchain for WebAssembly | 
 
